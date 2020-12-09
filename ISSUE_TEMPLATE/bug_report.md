@@ -1,4 +1,4 @@
-### Bug Report :bug:
+### :bug: Bug Report
 
 <p align="center">
   <a href="https://github.com/107-systems/107-Arduino-Viper"><img src="https://github.com/107-systems/.github/raw/main/logo/viper.jpg" width="20%"></a>
