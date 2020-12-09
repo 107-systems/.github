@@ -1,11 +1,8 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: "[Bug]"
-labels: ''
-assignees: ''
+### Bug Report :bug:
 
----
+<p align="center">
+  <a href="https://github.com/107-systems/107-Arduino-Viper"><img src="https://github.com/107-systems/.github/raw/main/logo/viper.jpg" width="20%"></a>
+</p>
 
 **Describe the bug**
 
