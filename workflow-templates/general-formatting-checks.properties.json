@@ -1,0 +1,5 @@
+{
+  "name": "General Formatting Checks",
+  "description": "Check the repository's files for compliance with the formatting style.",
+  "iconName": "general-formatting-checks"
+}
