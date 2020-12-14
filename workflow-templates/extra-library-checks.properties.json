@@ -1,0 +1,5 @@
+{
+  "name": "Extra Library Checks",
+  "description": "Check for common issues with the structure and metadata of Arduino libraries.",
+  "iconName": "extra-library-checks"
+}
