@@ -90,6 +90,11 @@
     "description": "Documentation for the project."
   },
   {
+    "name": "topic: fpga",
+    "color": "#00ffff",
+    "description": "FPGAs: HDL code, simulation, verification, and synthesis."
+  },
+  {
     "name": "type: bug",
     "color": "#ff0000",
     "description": ""
