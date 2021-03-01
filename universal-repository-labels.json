@@ -113,5 +113,10 @@
     "name": "type: support",
     "color": "#ffff00",
     "description": "Request for help using the project."
+  },
+  {
+    "name": "type: priority support",
+    "color": "#ff0000",
+    "description": "Get help within a workday. Only available for Gold/Platin/Diamond tier or dedicated support contract."
   }
 ]
