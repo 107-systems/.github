@@ -113,5 +113,10 @@
     "name": "type: support",
     "color": "#ffff00",
     "description": "Request for help using the project."
+  },
+  {
+    "name": "type: priority support",
+    "color": "#ffd700",
+    "description": "Guaranteed response within a workday."
   }
 ]
