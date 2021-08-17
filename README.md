@@ -3,7 +3,7 @@
 Repository containing default files for all [107-Systems](https://107-systems.org/) repositories.
 
 <p align="center">
-  <a href="https://github.com/107-systems/Viper-Firmware"><img src="logo/viper.jpg" width="40%"></a>
+  <a href="https://github.com/107-systems/107-Arduino-DroneCore"><img src="logo/viper.jpg" width="40%"></a>
 </p>
 
 ### Arduino Library CI Status
