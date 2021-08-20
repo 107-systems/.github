@@ -1,4 +1,4 @@
-name: Manage Repository Labels
+name: Sync Labels
 
 on:
   push:
@@ -25,18 +25,18 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Download universal labels data file
+      - name: Download
         uses: carlosperate/download-file-action@v1.0.3
         with:
           file-url: https://raw.githubusercontent.com/107-systems/.github/main/universal-repository-labels.json
           location: ${{ env.SOURCE_DATA_FOLDER_PATH }}
 
-      - name: Merge labels data files
+      - name: Merge label configuration files
         run: |
           # Merge all data files and output to the location used by lannonbr/issue-label-manager-action
           jq -s '.=.|add|.' "${{ env.SOURCE_DATA_FOLDER_PATH }}"/*.json > "${{ env.MERGED_DATA_FILE_PATH }}"
 
-      - name: Update labels
+      - name: Sync labels
         uses: lannonbr/issue-label-manager-action@2.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
