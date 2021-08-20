@@ -18,9 +18,9 @@ jobs:
 
     env:
       # All YAML files in this folder will be merged.
-      SOURCE_DATA_FOLDER_PATH: .github/repository-labels-data
+      CONFIGURATIONS_FOLDER: .github/repository-labels-data
       # See: https://github.com/Financial-Times/github-label-sync#label-config-file
-      MERGED_DATA_FILE_PATH: .github/labels.yml
+      MERGED_CONFIGURATION_PATH: .github/labels.yml
 
     steps:
       - uses: actions/checkout@v2
@@ -29,13 +29,13 @@ jobs:
         uses: carlosperate/download-file-action@v1.0.3
         with:
           file-url: https://raw.githubusercontent.com/107-systems/.github/main/universal-repository-labels.yml
-          location: ${{ env.SOURCE_DATA_FOLDER_PATH }}
+          location: ${{ env.CONFIGURATIONS_FOLDER }}
 
       - name: Merge label configuration files
         run: |
           # Merge all configuration files
           shopt -s extglob
-          cat "${{ env.SOURCE_DATA_FOLDER_PATH }}"/*.@(yml|yaml) > "${{ env.MERGED_DATA_FILE_PATH }}"
+          cat "${{ env.CONFIGURATIONS_FOLDER }}"/*.@(yml|yaml) > "${{ env.MERGED_CONFIGURATION_PATH }}"
 
       - name: Install github-label-sync
         run: sudo npm install --global github-label-sync
@@ -46,5 +46,5 @@ jobs:
         run: |
           # See: https://github.com/Financial-Times/github-label-sync
           github-label-sync \
-            --labels "${{ env.MERGED_DATA_FILE_PATH }}" \
+            --labels "${{ env.MERGED_CONFIGURATION_PATH }}" \
             ${{ github.repository }}
