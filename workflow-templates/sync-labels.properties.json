@@ -1,5 +1,5 @@
 {
   "name": "Manage Repository Labels",
   "description": "Sync repository labels from a centralized source list",
-  "iconName": "manage-labels"
+  "iconName": "sync-labels"
 }

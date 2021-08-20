@@ -3,8 +3,8 @@ name: Manage Repository Labels
 on:
   push:
     paths:
-      - ".github/workflows/manage-labels.yml"
       - ".github/repository-labels-data/*.json"
+      - ".github/workflows/sync-labels.ya?ml"
   schedule:
     # run every Tuesday at 3 AM UTC
     - cron: "0 3 * * 2"
