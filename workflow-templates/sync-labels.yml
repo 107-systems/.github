@@ -3,7 +3,7 @@ name: Sync Labels
 on:
   push:
     paths:
-      - ".github/repository-labels-data/*.json"
+      - ".github/repository-labels-data/*.ya?ml"
       - ".github/workflows/sync-labels.ya?ml"
   schedule:
     # run every Tuesday at 3 AM UTC
@@ -17,10 +17,10 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      # All JSON files in this folder will be merged.
+      # All YAML files in this folder will be merged.
       SOURCE_DATA_FOLDER_PATH: .github/repository-labels-data
-      # See: https://github.com/lannonbr/issue-label-manager-action#usage
-      MERGED_DATA_FILE_PATH: .github/labels.json
+      # See: https://github.com/Financial-Times/github-label-sync#label-config-file
+      MERGED_DATA_FILE_PATH: .github/labels.yml
 
     steps:
       - uses: actions/checkout@v2
@@ -28,15 +28,23 @@ jobs:
       - name: Download
         uses: carlosperate/download-file-action@v1.0.3
         with:
-          file-url: https://raw.githubusercontent.com/107-systems/.github/main/universal-repository-labels.json
+          file-url: https://raw.githubusercontent.com/107-systems/.github/main/universal-repository-labels.yml
           location: ${{ env.SOURCE_DATA_FOLDER_PATH }}
 
       - name: Merge label configuration files
         run: |
-          # Merge all data files and output to the location used by lannonbr/issue-label-manager-action
-          jq -s '.=.|add|.' "${{ env.SOURCE_DATA_FOLDER_PATH }}"/*.json > "${{ env.MERGED_DATA_FILE_PATH }}"
+          # Merge all configuration files
+          shopt -s extglob
+          cat "${{ env.SOURCE_DATA_FOLDER_PATH }}"/*.@(yml|yaml) > "${{ env.MERGED_DATA_FILE_PATH }}"
+
+      - name: Install github-label-sync
+        run: sudo npm install --global github-label-sync
 
       - name: Sync labels
-        uses: lannonbr/issue-label-manager-action@2.0.0
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # See: https://github.com/Financial-Times/github-label-sync
+          github-label-sync \
+            --labels "${{ env.MERGED_DATA_FILE_PATH }}" \
+            ${{ github.repository }}
