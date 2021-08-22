@@ -1,3 +1,11 @@
+---
+name: Feature Request
+about: Suggest an improvement for this project.
+title: ""
+labels: "type: enhancement"
+assignees: ""
+---
+
 ### ⚡ Feature Request
 
 <p align="center">

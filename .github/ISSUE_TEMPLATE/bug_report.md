@@ -1,3 +1,11 @@
+---
+name: Bug Report
+about: Report problems with the code in this repository.
+title: ""
+labels: "type: bug"
+assignees: ""
+---
+
 ### :bug: Bug Report
 
 <p align="center">
