@@ -28,7 +28,8 @@ jobs:
       MERGED_CONFIGURATION_PATH: .github/labels.yml
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
       - name: Download
         uses: carlosperate/download-file-action@v1.0.3
