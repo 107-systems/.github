@@ -6,6 +6,12 @@ Repository containing default files for all [107-Systems](https://107-systems.or
   <a href="https://github.com/107-systems/107-Arduino-DroneCore"><img src="logo/viper.jpg" width="40%"></a>
 </p>
 
+### `107-systems` Sponsor List
+Our work would not be possible without the generous contribution of our sponsors. Thank you very much, we 💖 you 😘 !
+
+#### :2nd_place_medal: Silver :2nd_place_medal:
+* [per1234](https://github.com/per1234)
+
 ### Arduino Library CI Status
 | Library | ✔️ / ❌ |
 |:-:|:-:|
