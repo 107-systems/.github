@@ -11,6 +11,7 @@ Our work would not be possible without the generous contribution of our sponsors
 
 #### :2nd_place_medal: Silver :2nd_place_medal:
 * [per1234](https://github.com/per1234)
+* [aentinger](https://github.com/aentinger)
 
 ### Arduino Library CI Status
 | Library | ✔️ / ❌ |
