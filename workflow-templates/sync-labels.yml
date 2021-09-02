@@ -25,7 +25,6 @@ jobs:
       # All YAML files in this folder will be merged.
       CONFIGURATIONS_FOLDER: .github/label-configuration-files
       # See: https://github.com/Financial-Times/github-label-sync#label-config-file
-      MERGED_CONFIGURATION_PATH: .github/labels.yml
 
     steps:
       - name: Checkout repository
@@ -36,6 +35,10 @@ jobs:
         with:
           file-url: https://raw.githubusercontent.com/107-systems/.github/main/universal-repository-labels.yml
           location: ${{ env.CONFIGURATIONS_FOLDER }}
+      - name: Set environment variables
+        run: |
+          # See: https://docs.github.com/en/actions/reference/workflow-commands-for-github-actions#setting-an-environment-variable
+          echo "MERGED_CONFIGURATION_PATH=${{ runner.temp }}/labels.yml" >> "$GITHUB_ENV"
 
       - name: Determine whether to dry run
         id: dry-run
