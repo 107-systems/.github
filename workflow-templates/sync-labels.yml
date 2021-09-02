@@ -3,8 +3,8 @@ name: Sync Labels
 on:
   push:
     paths:
-      - ".github/repository-labels-data/*.ya?ml"
       - ".github/workflows/sync-labels.ya?ml"
+      - ".github/label-configuration-files/*.ya?ml"
   schedule:
     # run every Tuesday at 3 AM UTC
     - cron: "0 3 * * 2"
@@ -18,7 +18,7 @@ jobs:
 
     env:
       # All YAML files in this folder will be merged.
-      CONFIGURATIONS_FOLDER: .github/repository-labels-data
+      CONFIGURATIONS_FOLDER: .github/label-configuration-files
       # See: https://github.com/Financial-Times/github-label-sync#label-config-file
       MERGED_CONFIGURATION_PATH: .github/labels.yml
 
