@@ -7,7 +7,7 @@
   * heavily leveraging the Arduino ecosystem.
 
 * :flying_saucer:	 We are building a high-quality and reliable [Arduino-DroneCore](https://github.com/107-systems/107-Arduino-DroneCore)
-  * leveraging [UAVCAN](https://uavcan.org/) and it's [Arduino port](https://github.com/107-systems/107-Arduino-UAVCAN) as central building blocks.
+  * leveraging [UAVCAN](https://uavcan.org/) and its [Arduino port](https://github.com/107-systems/107-Arduino-UAVCAN) as central building blocks.
 
 * :sparkling_heart: [Sponsor](https://github.com/sponsors/107-systems) our work if
   * you are a regular user of our libraries and **wish to contribute something back**.
