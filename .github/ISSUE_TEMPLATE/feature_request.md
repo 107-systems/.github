@@ -1,16 +1,14 @@
 ---
 name: Feature Request
 about: Suggest an improvement for this project.
-title: ""
+title: "[Feature Request]"
 labels: "type: enhancement"
 assignees: ""
 ---
 
-### ⚡ Feature Request
+<a href="https://107-systems.org/"><img align="right" src="https://raw.githubusercontent.com/107-systems/.github/main/logo/107-systems.png" width="15%"></a>
 
-<p align="center">
-  <a href="https://github.com/107-systems/107-Arduino-Viper"><img src="https://github.com/107-systems/.github/raw/main/logo/viper.jpg" width="20%"></a>
-</p>
+### ⚡ Feature Request
 
 **Please Describe The Problem To Be Solved**
 (Replace This Text: Please present a concise description of the problem to be addressed by this feature request. Please be clear what parts of the problem are considered to be in-scope and out-of-scope.)
