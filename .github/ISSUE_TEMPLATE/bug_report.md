@@ -1,16 +1,14 @@
 ---
 name: Bug Report
 about: Report problems with the code in this repository.
-title: ""
+title: "[Bug Report]"
 labels: "type: bug"
 assignees: ""
 ---
 
-### :bug: Bug Report
+<a href="https://107-systems.org/"><img align="right" src="https://raw.githubusercontent.com/107-systems/.github/main/logo/107-systems.png" width="15%"></a>
 
-<p align="center">
-  <a href="https://github.com/107-systems/107-Arduino-Viper"><img src="https://github.com/107-systems/.github/raw/main/logo/viper.jpg" width="20%"></a>
-</p>
+### :bug: Bug Report
 
 **Describe the bug**
 
