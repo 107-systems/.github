@@ -1,5 +1,5 @@
-.github
-=======
+`.github`
+=========
 Repository containing default files for all [107-Systems](https://107-systems.org/) repositories.
 
 <p align="center">
