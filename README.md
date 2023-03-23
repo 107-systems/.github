@@ -15,6 +15,7 @@ All artwork is copyright © [LXRobotics GmbH](https://www.lxrobotics.com/). All 
 ### Arduino Library CI Status
 | Library | ✔️ / ❌ |
 |:-:|:-:|
+| [107-Arduino-24LCxx](https://github.com/107-systems/107-Arduino-24LCxx) | [![Compile Examples](https://github.com/107-systems/107-Arduino-24LCxx/workflows/Compile%20Examples/badge.svg)](https://github.com/107-systems/107-Arduino-24LCxx/actions?workflow=Compile+Examples) |
 | [107-Arduino-BMP388](https://github.com/107-systems/107-Arduino-BMP388) | [![Compile Examples](https://github.com/107-systems/107-Arduino-BMP388/workflows/Compile%20Examples/badge.svg)](https://github.com/107-systems/107-Arduino-BMP388/actions?workflow=Compile+Examples) |
 | [107-Arduino-BoostUnits](https://github.com/107-systems/107-Arduino-BoostUnits) | [![Compile Examples](https://github.com/107-systems/107-Arduino-BoostUnits/workflows/Compile%20Examples/badge.svg)](https://github.com/107-systems/107-Arduino-BoostUnits/actions?workflow=Compile+Examples) |
 | [107-Arduino-Debug](https://github.com/107-systems/107-Arduino-Debug) | [![Compile Examples](https://github.com/107-systems/107-Arduino-Debug/workflows/Compile%20Examples/badge.svg)](https://github.com/107-systems/107-Arduino-Debug/actions?workflow=Compile+Examples) |
