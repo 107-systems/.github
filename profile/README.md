@@ -16,3 +16,4 @@ Please consider [sponsoring our work](https://github.com/sponsors/107-systems) i
   <a href="https://github.com/107-systems/viper"><img src="https://raw.githubusercontent.com/107-systems/.github/main/logo/viper-107-quick-nav.jpg" width="30%"></a>
 </p>
 
+**Note**: For commercial support, customisation or contract development work contact consulting@lxrobotics.com.
