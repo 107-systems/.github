@@ -1,5 +1,6 @@
 <a href="https://107-systems.org/"><img align="right" src="https://raw.githubusercontent.com/107-systems/.github/main/logo/107-systems.png" width="15%"></a>
-### Hi there :coffee: :wave:
+Hi there :coffee: :wave:
+========================
 <a href="https://opencyphal.org/"><img align="right" src="https://raw.githubusercontent.com/107-systems/.github/main/logo/opencyphal.svg" width="25%"></a>
 We are a **multi-national** (:austria: :belgium: :us: :estonia: :de: ) group of motivated volunteers developing reusable hardware and software for :robot: systems.
 
