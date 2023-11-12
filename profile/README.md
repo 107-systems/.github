@@ -2,7 +2,7 @@
 Hi there :coffee: :wave:
 ========================
 <a href="https://opencyphal.org/"><img align="right" src="https://raw.githubusercontent.com/107-systems/.github/main/logo/opencyphal.svg" width="25%"></a>
-We are a **multi-national** (:austria: :belgium: :us: :estonia: :de: ) group of motivated volunteers developing reusable hardware and software for :robot: systems.
+We are a **multi-national** (:austria: :belgium: :us: :estonia: :de: :australia:) group of motivated volunteers developing reusable hardware and software for :robot: systems.
 
 Please consider [sponsoring our work](https://github.com/sponsors/107-systems) if
 * you are a regular user of our libraries and **wish to give something back**.
@@ -19,4 +19,4 @@ Please consider [sponsoring our work](https://github.com/sponsors/107-systems) i
 
 **Note**: For commercial support, customisation or contract development work contact consulting@lxrobotics.com.
 
-[**L3X-Z**](https://github.com/107-systems/l3xz) | [**Pika Spark**](https://pika-spark.io/) | [**Viper**](https://github.com/107-systems/viper) | [**T07**](https://github.com/107-systems/T07)
+[**L3X-Z**](https://github.com/107-systems/l3xz) | [**Viper**](https://github.com/107-systems/viper) | [**T07**](https://github.com/107-systems/T07) | [**Pika Spark**](https://pika-spark.io/)
