@@ -18,3 +18,5 @@ Please consider [sponsoring our work](https://github.com/sponsors/107-systems) i
 </p>
 
 **Note**: For commercial support, customisation or contract development work contact consulting@lxrobotics.com.
+
+[**L3X-Z**](https://github.com/107-systems/l3xz) | [**Pika Spark**](https://pika-spark.io/) | [**Viper**](https://github.com/107-systems/viper) | [**T07**](https://github.com/107-systems/T07)
